@@ -546,6 +546,8 @@ header {
   transition: opacity 250ms linear, visibility 250ms linear;
 }
 
+/*            MODAL         */
+
 .modal {
   width: 408px;
   min-height: 576px;
@@ -593,3 +595,75 @@ header {
   visibility: hidden;
   pointer-events: none;
 }
+.form {
+margin: 16px 24px 0 24px;
+}
+.modal-text {
+  text-align: center;
+  margin-top: 72px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--title);
+}
+
+.modal-label {
+  display: block;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--clients);
+  margin-bottom: 4px;
+}
+
+.modal-input{
+width: 360px;
+height: 40px;
+box-sizing: border-box;
+border: 1px solid rgba(46, 47, 66, 0.4);
+border-radius: 4px;
+padding: 0 10px 0 38px;
+outline: transparent;
+}
+
+.modal-coments{
+  width: 360px;
+height: 120px;
+box-sizing: border-box;
+border: 1px solid rgba(46, 47, 66, 0.4);
+border-radius: 4px;
+padding: 8px 10px 8px 16px;
+outline: transparent;
+resize: none;
+}
+ 
+.modal-input:focus,
+.modal-coments:focus {
+border-color: var(--accent-color);
+fill: var(--accent-color);
+}
+
+.modal-wrapper {
+position: relative;
+margin-bottom: 8px;
+}
+
+.modal-icon{
+  position: absolute;
+  left: 16px;
+  bottom: 50%;
+  transform: translateY(+50%);
+  fill: var(--title);
+}
+.modal-input:focus+.modal-icon {
+  fill: var(--accent-color);
+  }
+  .label-privacy
+  {font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color:var(--clients);}
+
+  .link-privacy{
+    color: var(--accent-color);
+  }
