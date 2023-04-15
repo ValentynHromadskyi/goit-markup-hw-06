@@ -435,6 +435,10 @@ header {
   background-color: var(--footer-hover);
 }
 
+.foother-subscribe-title{
+  font-weight: 500;
+}
+
 .foother-subscribe {
   margin-left: 80px;
 }
@@ -470,6 +474,7 @@ header {
   justify-items: center;
   cursor: pointer;
   font-family: inherit;
+  font-weight: 500;
   color: var(--hero-text);
   background-color: var(--accent-color);
   gap: 16px;
@@ -699,6 +704,7 @@ header {
 .modal-coments {
   width: 360px;
   height: 120px;
+  font-size: 12px;
   box-sizing: border-box;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
