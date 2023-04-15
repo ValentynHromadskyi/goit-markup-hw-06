@@ -412,6 +412,7 @@ header {
 
 .foother-conteiner {
   display: flex;
+  justify-content: space-between;
 }
 
 .social-media {
@@ -444,10 +445,6 @@ header {
   gap: 24px;
 }
 
-.foother-wrapper {
-  position: relative;
-}
-
 .foother-input {
   color: var(--hero-text);
   padding: 8px 16px;
@@ -459,16 +456,11 @@ header {
   font-size: 12px;
   line-height: 2;
 }
-.foother-input-label {
-  position: absolute;
-  left: 16px;
-  top: 8px;
+
+.foother-input::placeholder {
   color: var(--hero-text);
   font-size: 12px;
   line-height: 2;
-}
-.foother-input:not(:placeholder-shown) + .foother-input-label {
-  color: transparent;
 }
 
 .foother-btn {
@@ -476,6 +468,8 @@ header {
   display: flex;
   align-items: center;
   justify-items: center;
+  cursor: pointer;
+  font-family: inherit;
   color: var(--hero-text);
   background-color: var(--accent-color);
   gap: 16px;
@@ -485,8 +479,6 @@ header {
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.subscribe-icon {
 }
 
 .foother-btn:hover,
@@ -784,6 +776,8 @@ header {
   width: 169px;
   height: 56px;
   padding: 16px 32px;
+  cursor: pointer;
+  font-family: inherit;
   color: var(--hero-text);
   background-color: var(--accent-color);
   border: none;
